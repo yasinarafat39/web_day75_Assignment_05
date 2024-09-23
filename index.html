@@ -42,10 +42,10 @@
       };
     </script>
   </head>
-  <body class="max-w-max_web_width mx-auto border border-red-400 font-lexend text-secondary bg-third box-border">
+  <body class="max-w-max_web_width mx-auto border border-red-400 font-lexend text-secondary box-border">
     <!-- Navbar -->
-    <header class="max-w-max_content_width mx-auto border border-black">
-      <nav class="flex flex-col lg:flex-row space-y-4 justify-between items-center py-6 mb-10">
+    <header class="border border-black sticky top-0 glass z-10">
+      <nav class="px-[150px] mx-auto bg-third border flex flex-col lg:flex-row justify-between items-center py-6">
         <a href="./blog.html"><button class="btn py-3 px-8 bg-primary hover:bg-primary font-semibold text-xl h-auto">Blog</button></a>
         <!-- logo -->
         <div class="flex items-center gap-4">
@@ -61,13 +61,17 @@
           </h2>
         </div>
       </nav>
-    </header>
-    <main class="bg-white py-20 px-[150px] mx-auto border border-pink-300 mb-40">
+
       <!-- buttons -->
-      <div class="flex justify-center gap-4 mb-8">
+      <div class="flex justify-center border gap-4 pb-8 pt-10 ">
         <button id="donateToggleBtn" class="btn py-4 px-8 bg-primary hover:bg-primary font-semibold text-xl h-auto">Donation</button>
         <button id="historyToggleBtn" class="btn py-4 px-8 bg-transparent hover:bg-transparent font-semibold text-xl h-auto">History</button>
       </div>
+      
+    </header>
+    <main class="bg-white pb-20 px-[150px] mx-auto border border-pink-300 mb-40">
+      
+      
 
       <!-- dontaion cards -->
       <section id="donationSection">
@@ -151,5 +155,6 @@
 
      
     <script src="./Js/app.js"></script>
+    <script src="./Js/utilities.js"></script>
   </body>
 </html>

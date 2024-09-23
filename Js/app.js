@@ -7,12 +7,8 @@ const donateToggleBtn = document.getElementById('donateToggleBtn');
 const donationSection = document.getElementById('donationSection');
 
 
-for (let singleButton of buttons) {
-//   console.log(singleButton);
-singleButton.addEventListener('click', function(){
-    // console.log('Donate now button clicked')
-    // console.log(singleButton.parentNode.parentNode.children[0].children[1].innerText); // donatedAmount
-    // console.log(singleButton.parentNode.parentNode.children[3].value) // Amount
+for (let singleButton of buttons) { 
+singleButton.addEventListener('click', function(){ 
 
     const donatedAmountField = singleButton.parentNode.parentNode.children[0].children[1];
     const donatedAmount = parseFloat(donatedAmountField.innerText);
@@ -31,25 +27,11 @@ singleButton.addEventListener('click', function(){
     
     // add this transaction into the history
     const cardTitle = singleButton.parentNode.parentNode.children[1].innerText; 
-    
-    // create local date formate
-    const now = new Date();
-    const year = now.getFullYear();
-    const month = now.getMonth() + 1;
-    const day = now.getDate();
-    let hours = now.getHours();
-    const minutes = now.getMinutes();
-            // Determine AM or PM
-    const amOrPm = hours <= 12? "AM" : "PM";
-            // convert to 12-hour format
-    hours = hours % 12;
-    hours = hours ? hours : 12; 
-    // format the date and time that I want
-    const formattedDate = `${day}/${month}/${year} ${hours}:${minutes} ${amOrPm}`
+      
     historySection.innerHTML += `
         <div class="border-2 p-6 space-y-4 rounded-xl">
           <h1 class="text-2xl">${tryToDonateAmount} taka is Donated for ${cardTitle}</h1>
-          <p class="text-xl text-gray-600">Date: ${formattedDate}</p>
+          <p class="text-xl text-gray-600">Date: ${getCurrentDateAndTime()}</p>
         </div>
     `
 })
@@ -57,22 +39,10 @@ singleButton.addEventListener('click', function(){
 
 
 historyToggleBtn.addEventListener('click', function(){ 
-    donationSection.classList.add('hidden');
-    historyToggleBtn.classList.remove('bg-transparent')
-    historyToggleBtn.classList.remove('hover:bg-transparent')
-    historyToggleBtn.classList.add('bg-primary') 
-    historyToggleBtn.classList.add('hover:bg-primary') 
-    donateToggleBtn.classList.remove('bg-primary')
-    donateToggleBtn.classList.add('bg-transparent')
-    historySection.classList.remove('hidden')
+    historyToggleActivities();
 })
 
  
 donateToggleBtn.addEventListener('click', function(){
-    donationSection.classList.remove('hidden');  
-    historyToggleBtn.classList.remove('bg-primary');
-    donateToggleBtn.classList.add('bg-primary')
-    historyToggleBtn.classList.add('bg-transparent')
-    donateToggleBtn.classList.remove('bg-transparent')
-    historySection.classList.add('hidden')
+    donateToggleActivities();
 })
