@@ -65,12 +65,12 @@
     <main class="bg-white py-20 px-[150px] mx-auto border border-pink-300 mb-40">
       <!-- buttons -->
       <div class="flex justify-center gap-4 mb-8">
-        <button class="btn py-4 px-8 bg-primary hover:bg-primary font-semibold text-xl h-auto">Donation</button>
-        <button class="btn py-4 px-8 bg-transparent hover:bg-transparent font-semibold text-xl h-auto">History</button>
+        <button id="donateToggleBtn" class="btn py-4 px-8 bg-primary hover:bg-primary font-semibold text-xl h-auto">Donation</button>
+        <button id="historyToggleBtn" class="btn py-4 px-8 bg-transparent hover:bg-transparent font-semibold text-xl h-auto">History</button>
       </div>
 
       <!-- dontaion cards -->
-      <section>
+      <section id="donationSection">
         <!-- card 1 -->
         <div class="card card-side shadow border">
           <figure class="min-w-1/2">
@@ -143,21 +143,13 @@
       </section>
       
 
-
- 
-
-
-
-
+      <section id="history" class="space-y-5">
+        <h1 class="text-3xl text-center">History</h1> 
+      </section>
+  
     </main>
 
-    <section id="history">
-        <h1 class="text-3xl text-center">History</h1> 
-    </section>
-
-
      
-
     <script src="./Js/app.js"></script>
   </body>
 </html>

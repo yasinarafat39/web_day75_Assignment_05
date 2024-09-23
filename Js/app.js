@@ -2,6 +2,9 @@ const buttons = document.querySelectorAll(".DonateNowBtn");
 const inputFields = document.querySelectorAll(".card input");
 const mainBalanceField = document.getElementById('mainBalance');
 const historySection = document.getElementById('history');
+const historyToggleBtn = document.getElementById('historyToggleBtn');
+const donateToggleBtn = document.getElementById('donateToggleBtn');
+const donationSection = document.getElementById('donationSection');
 
 
 for (let singleButton of buttons) {
@@ -38,3 +41,23 @@ singleButton.addEventListener('click', function(){
     `
 })
 }
+
+
+historyToggleBtn.addEventListener('click', function(){ 
+    donationSection.classList.add('hidden');
+    historyToggleBtn.classList.remove('bg-transparent')
+    historyToggleBtn.classList.remove('hover:bg-transparent')
+    historyToggleBtn.classList.add('bg-primary') 
+    historyToggleBtn.classList.add('hover:bg-primary') 
+    donateToggleBtn.classList.remove('bg-primary')
+    donateToggleBtn.classList.add('bg-transparent')
+})
+
+ 
+donateToggleBtn.addEventListener('click', function(){
+    donationSection.classList.remove('hidden');  
+    historyToggleBtn.classList.remove('bg-primary');
+    donateToggleBtn.classList.add('bg-primary')
+    historyToggleBtn.classList.add('bg-transparent')
+    donateToggleBtn.classList.remove('bg-transparent')
+})
