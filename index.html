@@ -56,7 +56,7 @@
         <div class="flex items-center gap-3">
           <img src="./assets/coin.png" alt="coin" />
           <h2 class="text-xl font-medium opacity-70">
-            <span>5500</span>
+            <span id="mainBalance">5500</span>
             <span>BDT</span>
           </h2>
         </div>
@@ -90,7 +90,7 @@
             </p>
             <input type="number" placeholder="Write Donation Amount" class="input input-bordered w-full  p-[18px] mb-4 mt-6 placeholder:font-light" />
             <div class="card-actions">
-              <button class="btn py-4 px-8 bg-primary hover:bg-primary font-semibold text-xl h-auto w-full">Donate Now</button>
+              <button class="DonateNowBtn btn py-4 px-8 bg-primary hover:bg-primary font-semibold text-xl h-auto w-full">Donate Now</button>
             </div>
           </div>
         </div>
@@ -105,15 +105,15 @@
           <div class="card-body w-1/2">
             <button class="bg-btnSecondary flex rounded-lg gap-2 h-auto py-3 px-4" style="max-width: max-content;">
               <img src="./assets/coin.png" alt="coin" class="w-6 h-6">
-              <span class="opacity-70">0</span>
+              <span class="opacity-70" id="donatedAmount">0</span>
               <span class="opacity-70">BDT</span>
             </button>
             <h2 class="card-title font-bold text-xl mt-4">Donate for Flood Relief in Feni,Bangladesh</h2>
             <p class="font-light opacity-70">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
             </p>
-            <input type="number" placeholder="Write Donation Amount" class="input input-bordered w-full  p-[18px] mb-4 mt-6 placeholder:font-light" />
+            <input id="donateAmountField" type="number" placeholder="Write Donation Amount" class="input input-bordered w-full  p-[18px] mb-4 mt-6 placeholder:font-light" />
             <div class="card-actions">
-              <button class="btn py-4 px-8 bg-primary hover:bg-primary font-semibold text-xl h-auto w-full">Donate Now</button>
+              <button id="donateNow" class="DonateNowBtn btn py-4 px-8 bg-primary hover:bg-primary font-semibold text-xl h-auto w-full">Donate Now</button>
             </div>
           </div>
         </div>
@@ -136,7 +136,7 @@
             </p>
             <input type="number" placeholder="Write Donation Amount" class="input input-bordered w-full  p-[18px] mb-4 mt-6 placeholder:font-light" />
             <div class="card-actions">
-              <button class="btn py-4 px-8 bg-primary hover:bg-primary font-semibold text-xl h-auto w-full">Donate Now</button>
+              <button class="DonateNowBtn btn py-4 px-8 bg-primary hover:bg-primary font-semibold text-xl h-auto w-full">Donate Now</button>
             </div>
           </div>
         </div>
