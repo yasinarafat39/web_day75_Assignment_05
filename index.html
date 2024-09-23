@@ -28,6 +28,7 @@
               primary: "#B4F461",
               secondary: "#111111",
               third: "#F9F7F3",
+              btnSecondary: "rgba(17, 17, 17, 5%)"
             },
             fontFamily: {
               lexend: '"Lexend", sans-serif',
@@ -61,6 +62,37 @@
         </div>
       </nav>
     </header>
+    <main class="bg-white py-20 max-w-max_content_width mx-auto border border-pink-300">
+      <!-- buttons -->
+      <div class="flex justify-center gap-4 mb-8">
+        <button class="btn py-4 px-8 bg-primary hover:bg-primary font-semibold text-xl h-auto">Donation</button>
+        <button class="btn py-4 px-8 bg-transparent hover:bg-transparent font-semibold text-xl h-auto">History</button>
+      </div>
+
+      <!-- dontaion cards -->
+      <div class="card card-side shadow border">
+        <figure class="min-w-1/2">
+          <img
+          class="rounded-xl p-8 pr-0"
+            src="./assets/noakhali.png"
+            alt="noakhali" />
+        </figure>
+        <div class="card-body w-1/2">
+          <button class="bg-btnSecondary flex rounded-lg gap-2 h-auto py-3 px-4" style="max-width: max-content;">
+            <img src="./assets/coin.png" alt="coin" class="w-6 h-6">
+            <span class="opacity-70">0</span>
+            <span class="opacity-70">BDT</span>
+          </button>
+          <h2 class="card-title font-bold text-xl my-4">Donate for Flood at Noakhali, Bangladesh</h2>
+          <p class="font-light opacity-70">The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+          </p>
+          <input type="number" placeholder="Write Donation Amount" class="input input-bordered w-full  p-[18px] mb-4 mt-6 placeholder:font-light" />
+          <div class="card-actions">
+            <button class="btn py-4 px-8 bg-primary hover:bg-primary font-semibold text-xl h-auto w-full">Donate Now</button>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <script src="./Js/app.js"></script>
   </body>
