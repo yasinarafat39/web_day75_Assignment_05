@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate Bangladesh Blogs</title>
+
+    <!-- DaisyUI and Tailwind CSS CDN link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!----------------- Google Fonts ------------------>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+    </style>
+    <!-- font-family: "Lexend", sans-serif; -->
+
+    <!-- Tailwind Config file -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#B4F461",
+              secondary: "#111111",
+              third: "#F9F7F3",
+              btnSecondary: "rgba(17, 17, 17, 5%)"
+            },
+            fontFamily: {
+              lexend: '"Lexend", sans-serif',
+            },
+            spacing: {
+              max_web_width: "1440px",
+              max_content_width: "1140px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="max-w-max_web_width mx-auto border border-red-400 font-lexend text-secondary bg-third">
+    <!-- Navbar -->
+    <header class="max-w-max_content_width mx-auto border border-black">
+      <nav class="flex flex-col lg:flex-row space-y-4 justify-between items-center py-6 mb-10">
+        <a href="./index.html"><button class="btn py-3 px-8 bg-primary hover:bg-primary font-semibold text-xl h-auto">Home</button></a>
+        <!-- logo -->
+        <div class="flex items-center gap-4">
+          <img src="./assets/logo.png" alt="logo" />
+          <h2 class="text-xl font-semibold">Donate Bangladesh</h2>
+        </div>
+        <!-- main balace -->
+        <div class="flex items-center gap-3">
+          <img src="./assets/coin.png" alt="coin" />
+          <h2 class="text-xl font-medium opacity-70">
+            <span>5500</span>
+            <span>BDT</span>
+          </h2>
+        </div>
+      </nav>
+    </header>
+    <main class="bg-white py-20 px-[150px] mx-auto border border-pink-300 mb-40">
+        <!-------------------->
+        <h1 class="text-center text-4xl font-semibold">Welcome to Donate Bangladesh Blogs.</h1>
+        
+        <!-- FAQ -->
+        <section class="max-w-blog_w mx-auto mt-20">
+           <div class="join join-vertical w-full">
+               <div class="collapse collapse-arrow join-item border-base-300 border">
+                 <input type="radio" name="my-accordion-4" checked="checked" />
+                 <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                 <div class="collapse-content">
+                   <p>hello</p>
+                 </div>
+               </div>
+               <div class="collapse collapse-arrow join-item border-base-300 border">
+                 <input type="radio" name="my-accordion-4" />
+                 <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                 <div class="collapse-content">
+                   <p>hello</p>
+                 </div>
+               </div>
+               <div class="collapse collapse-arrow join-item border-base-300 border">
+                 <input type="radio" name="my-accordion-4" />
+                 <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+                 <div class="collapse-content">
+                   <p>hello</p>
+                 </div>
+               </div>
+               <div class="collapse collapse-arrow join-item border-base-300 border">
+                 <input type="radio" name="my-accordion-4" />
+                 <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+                 <div class="collapse-content">
+                   <p>hello</p>
+                 </div>
+               </div>
+           </div>
+        </section>
+
+    </main>
+ 
+
+
+
+
+    <script src="./Js/app.js"></script>
+  </body>
+</html>
