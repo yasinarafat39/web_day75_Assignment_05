@@ -34,6 +34,9 @@ singleButton.addEventListener('click', function(){
           <p class="text-xl text-gray-600">Date: ${getCurrentDateAndTime()}</p>
         </div>
     `
+    // Success Modal
+    // <!-- Open the modal using ID.showModal() method -->
+    my_modal_1.showModal()
 })
 }
 
