@@ -31,12 +31,25 @@ singleButton.addEventListener('click', function(){
     
     // add this transaction into the history
     const cardTitle = singleButton.parentNode.parentNode.children[1].innerText; 
-    console.log(cardTitle)
-     
+    
+    // create local date formate
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = now.getMonth() + 1;
+    const day = now.getDate();
+    let hours = now.getHours();
+    const minutes = now.getMinutes();
+            // Determine AM or PM
+    const amOrPm = hours <= 12? "AM" : "PM";
+            // convert to 12-hour format
+    hours = hours % 12;
+    hours = hours ? hours : 12; 
+    // format the date and time that I want
+    const formattedDate = `${day}/${month}/${year} ${hours}:${minutes} ${amOrPm}`
     historySection.innerHTML += `
         <div class="border-2 p-6 space-y-4 rounded-xl">
           <h1 class="text-2xl">${tryToDonateAmount} taka is Donated for ${cardTitle}</h1>
-          <p class="text-xl text-gray-600">Date: ${new Date()}</p>
+          <p class="text-xl text-gray-600">Date: ${formattedDate}</p>
         </div>
     `
 })
