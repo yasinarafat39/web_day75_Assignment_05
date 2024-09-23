@@ -34,7 +34,7 @@ singleButton.addEventListener('click', function(){
 
     const arrayCardTitle = cardTitle.innerText.split(' '); 
     historySection.innerHTML += `
-        <div class="border-2 p-6 space-y-4">
+        <div class="border-2 p-6 space-y-4 rounded-xl">
           <h1 class="text-2xl">${tryToDonateAmount} taka is Donated for Donate for Flood at ${arrayCardTitle[arrayCardTitle.length - 2]} ${arrayCardTitle[arrayCardTitle.length - 1]}</h1>
           <p class="text-xl text-gray-600">Date: ${new Date()}</p>
         </div>
@@ -51,6 +51,7 @@ historyToggleBtn.addEventListener('click', function(){
     historyToggleBtn.classList.add('hover:bg-primary') 
     donateToggleBtn.classList.remove('bg-primary')
     donateToggleBtn.classList.add('bg-transparent')
+    historySection.classList.remove('hidden')
 })
 
  
@@ -60,4 +61,5 @@ donateToggleBtn.addEventListener('click', function(){
     donateToggleBtn.classList.add('bg-primary')
     historyToggleBtn.classList.add('bg-transparent')
     donateToggleBtn.classList.remove('bg-transparent')
+    historySection.classList.add('hidden')
 })
