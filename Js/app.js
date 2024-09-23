@@ -30,12 +30,12 @@ singleButton.addEventListener('click', function(){
     mainBalanceField.innerText = newMainBalance; 
     
     // add this transaction into the history
-    const cardTitle = singleButton.parentNode.parentNode.children[1]; 
-
-    const arrayCardTitle = cardTitle.innerText.split(' '); 
+    const cardTitle = singleButton.parentNode.parentNode.children[1].innerText; 
+    console.log(cardTitle)
+     
     historySection.innerHTML += `
         <div class="border-2 p-6 space-y-4 rounded-xl">
-          <h1 class="text-2xl">${tryToDonateAmount} taka is Donated for Donate for Flood at ${arrayCardTitle[arrayCardTitle.length - 2]} ${arrayCardTitle[arrayCardTitle.length - 1]}</h1>
+          <h1 class="text-2xl">${tryToDonateAmount} taka is Donated for ${cardTitle}</h1>
           <p class="text-xl text-gray-600">Date: ${new Date()}</p>
         </div>
     `
