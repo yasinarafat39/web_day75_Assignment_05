@@ -45,7 +45,7 @@
   <body class="max-w-max_web_width mx-auto border border-red-400 font-lexend text-secondary box-border">
     <!-- Navbar -->
     <header class="border border-black sticky top-0 glass z-10">
-      <nav class="px-[150px] mx-auto bg-third border flex flex-col lg:flex-row justify-between items-center py-6">
+      <nav class="lg:px-[150px] space-y-3 lg:space-y-0 mx-auto bg-third border flex flex-col lg:flex-row justify-between items-center py-6">
         <a href="./blog.html"><button class="btn py-3 px-8 bg-primary hover:bg-primary font-semibold text-xl h-auto">Blog</button></a>
         <!-- logo -->
         <div class="flex items-center gap-4">
@@ -63,27 +63,27 @@
       </nav>
 
       <!-- buttons -->
-      <div class="flex justify-center border gap-4 pb-8 pt-10 ">
+      <div class="flex justify-center border gap-4 py-4 lg:pb-8 lg:pt-10 ">
         <button id="donateToggleBtn" class="btn py-4 px-8 bg-primary hover:bg-primary font-semibold text-xl h-auto">Donation</button>
         <button id="historyToggleBtn" class="btn py-4 px-8 bg-transparent hover:bg-transparent font-semibold text-xl h-auto">History</button>
       </div>
       
     </header>
-    <main class="bg-white pb-20 px-[150px] mx-auto border border-pink-300 mb-40">
+    <main class="bg-white pb-20 lg:px-[150px] mx-auto border border-pink-300 mb-40">
       
       
 
       <!-- dontaion cards -->
       <section id="donationSection">
         <!-- card 1 -->
-        <div class="card card-side shadow border">
+        <div class="card m-6 lg:m-0 card-side shadow border flex-col lg:flex-row">
           <figure class="min-w-1/2">
             <img
-            class="rounded-xl p-8 pr-0"
+              class="rounded-xl p-3 lg:p-8 lg:pr-0"
               src="./assets/noakhali.png"
               alt="noakhali" />
           </figure>
-          <div class="card-body w-1/2">
+          <div class="card-body p-3 lg:p-8 lg:w-1/2">
             <button class="bg-btnSecondary flex rounded-lg gap-2 h-auto py-3 px-4" style="max-width: max-content;">
               <img src="./assets/coin.png" alt="coin" class="w-6 h-6">
               <span class="opacity-70">0</span>
@@ -100,14 +100,14 @@
           </div>
         </div>
         <!-- card 2 -->
-        <div class="card card-side shadow border mt-8">
+        <div class="card m-6 lg:m-0 card-side shadow border flex-col lg:flex-row mt-8">
           <figure class="min-w-1/2">
             <img
-            class="rounded-xl p-8 pr-0"
+              class="rounded-xl p-3 lg:p-8 lg:pr-0"
               src="./assets/feni.png"
               alt="noakhali" />
           </figure>
-          <div class="card-body w-1/2">
+          <div class="card-body p-3 lg:p-8 lg:w-1/2">
             <button class="bg-btnSecondary flex rounded-lg gap-2 h-auto py-3 px-4" style="max-width: max-content;">
               <img src="./assets/coin.png" alt="coin" class="w-6 h-6">
               <span class="opacity-70" id="donatedAmount">0</span>
@@ -124,14 +124,14 @@
           </div>
         </div>
         <!-- card 3 -->
-        <div class="card card-side shadow border mt-8">
+        <div class="card m-6 lg:m-0 card-side shadow border flex-col lg:flex-row mt-8">
           <figure class="min-w-1/2">
             <img
-            class="rounded-xl p-8 pr-0"
+              class="rounded-xl p-3 lg:p-8 lg:pr-0"
               src="./assets/quota-protest.png"
               alt="noakhali" />
           </figure>
-          <div class="card-body w-1/2">
+          <div class="card-body p-3 lg:p-8 lg:w-1/2">
             <button class="bg-btnSecondary flex rounded-lg gap-2 h-auto py-3 px-4" style="max-width: max-content;">
               <img src="./assets/coin.png" alt="coin" class="w-6 h-6">
               <span class="opacity-70">0</span>
