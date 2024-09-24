@@ -73,14 +73,77 @@
                  <input type="radio" name="my-accordion-4" checked="checked" />
                  <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
                  <div class="collapse-content">
-                   <p>hello</p>
+                   <p>DOM or Document Object Model is a programming interface of XML or HTML document. DOM represant our HTML or XML document so that we can easily modify the page with the programming language. </p>
+                   <br>
+                   <p>We can do with DOM look like these:</p>
+                   <ul class="list-disc ml-4">
+                    <li>Create new elements.</li>
+                    <li>Remove the existing element.</li>
+                    <li>Update the existing element.</li>
+                    <li>Attributes Update, Add, Remove.</li>
+                    <li>Add, Update, and Remove the Style.</li>
+                    <li>Create a event in specific a element.</li>
+                   </ul>
                  </div>
                </div>
                <div class="collapse collapse-arrow join-item border-base-300 border">
                  <input type="radio" name="my-accordion-4" />
                  <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
                  <div class="collapse-content">
-                   <p>hello</p>
+                   <p>We can select an element from the DOM with element selectors:</p>
+                   <ul class="list-disc ml-4">
+                    <li><span class="font-bold">ID selector:</span>
+                      <ul class="list-decimal ml-6">
+                        <li>document.querySelector('#idName')</li>
+                        <li>document.getElementById(idName)</li>
+                      </ul>
+                    </li>
+                    <li><span class="font-bold">Class selector:</span>
+                      <ul class="list-decimal ml-6">
+                        <li>document.querySelector('.className')</li>
+                        <li>document.querySelectorAll('.className')</li>
+                        <li>document.getElementByClassName(className)</li>
+                      </ul>
+                    </li>
+                    <li><span class="font-bold">Tag Name selector:</span>
+                      <ul class="list-decimal ml-6">
+                        <li>document.querySelector('div')</li>
+                        <li>document.querySelectorAll('h4, section, article')</li>
+                        <li>document.getElementByTagName(div)</li>
+                      </ul>
+                    </li>
+                    <li><span class="font-bold">Attributes selector:</span>
+                      <ul class="list-decimal ml-6">
+                        <li>document.querySelector('[id="idName"]')</li>
+                        <li>document.querySelectorAll('[id="idName"], [id="idName"]')</li> 
+                      </ul>
+                    </li>
+                    <li><span class="font-bold">Pseudo-Class selector:</span>
+                      <ul class="list-decimal ml-6">
+                        <li>document.querySelector('li:first-child')</li>
+                        <li>document.querySelectorAll('li:first-child, li:last-child')</li> 
+                      </ul>
+                    </li>
+                    <li><span class="font-bold">Children selector:</span>
+                      <ul class="list-decimal ml-6">
+                        <li>const parentElement = document.getElementByTagName(div)</li>
+                        <li>parentElement.children</li> 
+                        <li>parentElement.childNodes</li> 
+                      </ul>
+                    </li>
+                    <li><span class="font-bold">Parent selector:</span>
+                      <ul class="list-decimal ml-6">
+                        <li>const anElement = document.getElementByTagName(div)</li>
+                        <li>anElement.parentNode</li>  
+                        <li>anElement.parentNode.parentNode</li>  
+                      </ul>
+                    </li>
+                    <li><span class="font-bold">Without specific element selector:</span>
+                      <ul class="list-decimal ml-6">
+                        <li>document.querySelectorAll('.box:not(#box3)')</li> 
+                      </ul>
+                    </li>
+                   </ul>
                  </div>
                </div>
                <div class="collapse collapse-arrow join-item border-base-300 border">
