@@ -44,8 +44,8 @@
   </head>
   <body class="max-w-max_web_width mx-auto border border-red-400 font-lexend text-secondary bg-third scroll-smooth">
     <!-- Navbar -->
-    <header class="max-w-max_content_width mx-auto border border-black">
-      <nav class="flex flex-col lg:flex-row space-y-4 justify-between items-center py-6 mb-10">
+    <header class="border border-black sticky top-0 glass z-10">
+      <nav class="lg:px-[150px] space-y-3 lg:space-y-0 mx-auto bg-third border flex flex-col lg:flex-row justify-between items-center py-6">
         <a href="./index.html"><button class="btn py-3 px-8 bg-primary hover:bg-primary font-semibold text-xl h-auto">Home</button></a>
         <!-- logo -->
         <div class="flex items-center gap-4">
@@ -56,13 +56,13 @@
         <div class="flex items-center gap-3">
           <img src="./assets/coin.png" alt="coin" />
           <h2 class="text-xl font-medium opacity-70">
-            <span>5500</span>
+            <span id="mainBalance">5500</span>
             <span>BDT</span>
           </h2>
         </div>
-      </nav>
+      </nav> 
     </header>
-    <main class="bg-white py-20 px-[150px] mx-auto border border-pink-300 mb-40">
+    <main class="bg-white py-20 px-6 lg:px-[150px] mx-auto border border-pink-300 mb-40">
         <!-------------------->
         <h1 class="text-4xl font-semibold">Important FAQ</h1>
         
