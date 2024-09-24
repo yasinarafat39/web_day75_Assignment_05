@@ -33,7 +33,7 @@ singleButton.addEventListener('click', function(){
         const cardTitle = singleButton.parentNode.parentNode.children[1].innerText; 
 
         historySection.innerHTML += `
-            <div class="border-2 p-6 space-y-4 rounded-xl">
+            <div class="border-2 p-6 mx-6 lg:mx-0 space-y-4 rounded-xl">
               <h1 class="text-2xl">${tryToDonateAmount} taka is Donated for ${cardTitle}</h1>
               <p class="text-xl text-gray-600">Date: ${getCurrentDateAndTime()}</p>
             </div>
