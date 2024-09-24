@@ -150,14 +150,89 @@
                  <input type="radio" name="my-accordion-4" />
                  <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
                  <div class="collapse-content">
-                   <p>hello</p>
+                   <p>Event delegation is a technique in JavaScript where a single event listener is added to a parent element to handle events triggered by its child elements. Instead of attaching event listeners to each individual child, the event is "delegated" to the parent. This works because events in the DOM "bubble up" from the target element (where the event occurs) to its ancestors (including the parent), allowing the parent to catch the event.</p>
+                   <br>
+                   <ul>
+                    <li><span class="font-bold">How it works:</span>
+                      <ul class="list-decimal ml-6">
+                        <li>An event listener is attached to a parent element.</li>
+                        <li>When an event occurs on a child element, it bubbles up through the DOM tree.</li>
+                        <li>The parent element's event listener detects the event and determines whether the event originated from a specific child.</li>
+                      </ul>
+                    </li>
+                    <br>
+                    <li><span class="font-bold">Benefits of event delegation:</span>
+                      <ul class="list-decimal ml-6">
+                        <li><span class="font-bold">Efficiency:</span> Fewer event listeners need to be attached, reducing memory consumption, especially with a large number of child elements.</li>
+                        <li><span class="font-bold">Dynamic content handling:</span> It works for child elements that are dynamically added to the parent later on. There's no need to reattach event listeners for new elements.</li>
+                        <li><span class="font-bold">Maintainability:</span> Centralizing event handling in a single function makes code easier to manage and debug.</li>
+                      </ul>
+                    </li>
+                    <br>
+                    <li><span class="font-bold">Use cases:</span>
+                      <ul class="list-decimal ml-6">
+                        <li>Handling events on lists, tables, or grids.</li>
+                        <li>Dealing with dynamic content where elements are added or removed frequently.</li>
+                      </ul>
+                    </li>
+                   </ul>
                  </div>
                </div>
                <div class="collapse collapse-arrow join-item border-base-300 border">
                  <input type="radio" name="my-accordion-4" />
                  <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
                  <div class="collapse-content">
-                   <p>hello</p>
+                   <p>Manipulating an element's attributes and styles using the DOM can be done through various methods. Here’s how we can do it:</p>
+                   <br>
+                   <ul class="list-decimal ml-6">
+                      <li class="font-bold">Manipulating Attributes:
+                        <p class="font-normal">You can use methods and properties like getAttribute(), setAttribute(), removeAttribute(), and direct property access to manipulate attributes.</p>
+                        <ul class="list-disc ml-4 font-normal">
+                          <li><span class="font-bold">Getting an Attribute:</span>
+                            <ul class="list-decimal ml-6">
+                              <li>const link = document.querySelector('a')</li>
+                              <li>const href = link.getAttribute('href')</li>
+                            </ul>
+                          </li>
+                          <li><span class="font-bold">Setting an Attribute:</span>
+                            <ul class="list-decimal ml-6">
+                              <li>link.setAttribute('href', 'https://google.com')</li>
+                            </ul>
+                          </li>
+                          <li><span class="font-bold">Removing  an Attribute:</span>
+                            <ul class="list-decimal ml-6">
+                              <li>link.removeAttribute('href')</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="font-bold">Manipulating Styles:
+                        <p class="font-normal">To manipulate an element's CSS styles, we can either modify individual properties using the style property or apply/remove CSS classes.</p>
+                        <ul class="list-disc ml-4 font-normal">
+                          <li><span class="font-bold">Using the style property:</span>
+                            <ul class="list-decimal ml-6">
+                              <li>const div = document.querySelector('div')</li>
+                              <li>div.style.backgroundColor = 'blue';</li>
+                              <li>div.style.width = '200px';</li>
+                            </ul>
+                          </li>
+                          <li><span class="font-bold">Using CSS Classes:</span>
+                            <ul class="list-decimal ml-6">
+                              <li>Adding a class:</li>
+                              <li>div.classList.add('highlight');</li> 
+                              <li>Removing a class:</li>
+                              <li>div.classList.remove('highlight');</li> 
+                            </ul>
+                          </li>
+                          <li><span class="font-bold">Using the className:</span>
+                            <ul class="list-decimal ml-6">
+                              <li>const div = document.querySelector('div')</li>
+                              <li>div.className = 'flex items-center gap-4';</li> 
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                   </ul>
                  </div>
                </div>
            </div>
